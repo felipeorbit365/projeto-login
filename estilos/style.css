@@ -38,6 +38,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -76,4 +79,6 @@ overflow: hidden;
 - isso faz com que a imagem fique com as bordas cortadas corretamente
 
 display: block; nas duas <div> -> para fazer com que elas sejam exibidas como bloco
+
+transition: width 0.3s, height 0.3s; e transition-timing-function: ease; -> dão um efeito de transição entre os diferentes tamanhos
 */

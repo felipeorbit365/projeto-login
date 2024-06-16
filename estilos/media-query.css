@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) { /* Desktops e grandes telas */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 950px;
+    }
+    
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}
+
+/*
+A versão para pequenas telas e celulares já foi feita, já que o projeto foi desenvolvido pensando em Mobile First
+
+---
+
+TABLET 
+
+Por essa razão, para a exibição dessa media query, a largura mínima da tela deve ser 768px e o máximo 992px (para tablets)
+
+O width é modificado para 80vw com o objetivo de ocupar mais a tela na horizontal, o que torna necessário mudar a exibição da <div> da imagem e da <div> do formulário, já que assim apareceria uma em cima da outra
+
+float
+- Muda o direcionamento 
+- float: left; -> coloca a <div> da imagem na esquerda
+- float: right; -> coloca a <div> do formulário na direita
+
+---
+
+DESKTOPS E GRANDES TELAS
+
+Mídia para ser exibida com a largura mínima de tela 992px e maiores
+
+---
+
+Um gradiente foi adicionado em tablets, desktops e telas grandes
+
+*/
