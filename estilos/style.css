@@ -30,7 +30,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -39,6 +38,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -90,12 +90,12 @@ div.campo > span {
 div.campo > input {
     background-color: #94cfcd;
     font-size: 1em;
-    width: calc(100% - 44px);
+    width: calc(100% - 45px);
     height: 100%;
-    transform: translateY(-12px);
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-12px);
 }
 
 div.campo > input:focus-within {
@@ -153,7 +153,7 @@ section#login -> configurações para centralizar
 - position: absolute;
 - top: 50%;
 - left: 50%;
-- transform: translate(-50%, -50%);
+- transform: translate(-50%, -50%); -> deve ser feito no final do seletor, sempre
 
 - top e left colocam no exato meio da tela
 - para mover para cima é necessário fazer uma translação, voltando metade da altura para cima e metade para esquerda
@@ -186,6 +186,7 @@ width: calc(100% - 44px);
 
 transform: translateY(-12px);
 - eixo Y, faz para cima
+- quando houver uma animação, sempre deve ser a ÚLTIMA linha do seletor
 
 div.campo > input:focus-within
 - enquanto estiver digitando, faz algo
